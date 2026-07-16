@@ -272,3 +272,8 @@ function exportToExcel(entries, filename) {
         alert('Error exporting file: ' + err.message);
     }
 }
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
