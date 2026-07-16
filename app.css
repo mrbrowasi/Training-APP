@@ -16,6 +16,8 @@ body{
 .logo{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    position: relative;
     margin-top: 0;
     animation: slideIn 3s ease-out;
 }
@@ -56,9 +58,9 @@ body{
     width: 77px;
     height: 64px;
     background-color: darkgreen;
-    position: relative;
+    position: absolute;
     top: -2px;
-    left: -77px;
+    left: 123px;
 }
 .brand{
     position: relative;
@@ -332,10 +334,6 @@ body{
     min-width: 700px;
 }
 @media (max-width: 768px){
-
-    .box3{
-        left: -60px;
-    }
 
     .brand{
         left: 0;
